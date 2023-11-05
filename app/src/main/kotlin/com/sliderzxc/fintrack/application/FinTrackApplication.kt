@@ -1,4 +1,4 @@
-package com.sliderzxc.fittrack.application
+package com.sliderzxc.fintrack.application
 
 import android.app.Application
 

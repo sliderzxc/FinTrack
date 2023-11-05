@@ -1,4 +1,4 @@
-package com.sliderzxc.fittrack.styles
+package com.sliderzxc.fintrack.styles
 
 import androidx.compose.ui.graphics.Color
 

@@ -1,4 +1,4 @@
-package com.sliderzxc.fittrack.styles
+package com.sliderzxc.fintrack.styles
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
