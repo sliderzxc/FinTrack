@@ -46,7 +46,7 @@ android {
 }
 
 dependencies {
-    // Core
+    // AndroidX
     implementation(libs.androidx.core)
     implementation(libs.androidx.lifecycle.runtime)
     // Jetpack Compose
