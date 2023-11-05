@@ -7,7 +7,7 @@ FinTrack is your go-to tool for effortlessly managing your finances. Take contro
 
 ```MIT License
 
-Copyright (c) 2023 Danyil Kobzar
+Copyright (c) 2023 Vadym Hrynyk
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
