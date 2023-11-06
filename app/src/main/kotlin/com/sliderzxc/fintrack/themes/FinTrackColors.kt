@@ -13,7 +13,7 @@ val baseLightPalette = FinTrackColors(
 )
 
 val baseDarkPalette = FinTrackColors(
-    primaryBackground = Color(0xFF23282D),
+    primaryBackground = Color(0xFF000000),
     primaryText = Color(0xFFF2F4F5),
     secondaryBackground = Color(0xFF191E23),
     secondaryText = Color(0xCC7A8A99),

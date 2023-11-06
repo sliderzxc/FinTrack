@@ -7,7 +7,6 @@ object FinTrackStyle {
     val colors: FinTrackColors
         @Composable
         get() = LocalFinTrackColors.current
-
 }
 
 val LocalFinTrackColors = staticCompositionLocalOf<FinTrackColors> {
