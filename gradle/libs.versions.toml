@@ -1,4 +1,5 @@
 [versions]
+accompanist-systemuicontroller = "0.32.0"
 agp = "8.3.0-alpha07"
 kotlin = "1.9.10"
 core-ktx = "1.12.0"
@@ -11,6 +12,7 @@ androidx-test-ext-junit = "1.1.5"
 espresso-core = "3.5.1"
 appcompat = "1.6.1"
 material = "1.10.0"
+navigation-compose = "2.7.5"
 
 [libraries]
 androidx-core = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -23,6 +25,9 @@ compose-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
 compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
 compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
 compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+compose-navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigation-compose" }
+compose-systemuicontroller = { module = "com.google.accompanist:accompanist-systemuicontroller", version.ref = "accompanist-systemuicontroller" }
+
 
 koin-bom = { group = "io.insert-koin", name = "koin-bom", version.ref = "koin" }
 koin-compose = { group = "io.insert-koin", name = "koin-androidx-compose" }

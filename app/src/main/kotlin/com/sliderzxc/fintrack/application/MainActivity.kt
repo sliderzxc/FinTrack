@@ -7,6 +7,9 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.ui.Modifier
+import androidx.navigation.compose.rememberNavController
+import com.google.accompanist.systemuicontroller.rememberSystemUiController
+import com.sliderzxc.fintrack.navigation.RootNavigationGraph
 import com.sliderzxc.fintrack.themes.FinTrackStyle
 import com.sliderzxc.fintrack.themes.FinTrackTheme
 
@@ -15,15 +18,12 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             FinTrackTheme {
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = FinTrackStyle.colors.primaryBackground
-                ) {
-                    Text(
-                        text = "Hello Android!",
-                        color = FinTrackStyle.colors.primaryText
-                    )
-                }
+                val navController = rememberNavController()
+                val systemUiController = rememberSystemUiController()
+
+                RootNavigationGraph(
+                    navController = navController
+                )
             }
         }
     }

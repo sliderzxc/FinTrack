@@ -61,6 +61,8 @@ dependencies {
     implementation(libs.compose.ui.tooling.preview)
     implementation(libs.compose.activity)
     implementation(libs.compose.material3)
+    implementation(libs.compose.navigation)
+    implementation(libs.compose.systemuicontroller)
     // Koin
     implementation(platform(libs.koin.bom))
     implementation(libs.koin.compose)
