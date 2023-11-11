@@ -1,11 +1,7 @@
 package com.sliderzxc.fintrack.application
 
 import android.app.Application
+import dagger.hilt.android.HiltAndroidApp
 
-class FinTrackApplication : Application() {
-
-    override fun onCreate() {
-        super.onCreate()
-
-    }
-}
+@HiltAndroidApp
+class FinTrackApplication : Application()
