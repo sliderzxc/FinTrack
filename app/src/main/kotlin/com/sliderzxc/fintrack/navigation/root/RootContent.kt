@@ -1,4 +1,4 @@
-package com.sliderzxc.fintrack.navigation.core
+package com.sliderzxc.fintrack.navigation.root
 
 import androidx.compose.runtime.Composable
 import com.arkivanov.decompose.extensions.compose.jetbrains.stack.Children
