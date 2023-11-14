@@ -6,10 +6,14 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import com.sliderzxc.fintrack.features.splash.navigation.SplashComponent
 
 @Composable
 fun SplashScreen(
+    component: SplashComponent
 ) {
-    Text(text = "Hello Android", modifier = Modifier.background(Color.Black))
+    // todo val state by component.state.collectAsState()
+
+    Text(text = "Hello Android")
     Log.d("MyLog", "Hello")
 }

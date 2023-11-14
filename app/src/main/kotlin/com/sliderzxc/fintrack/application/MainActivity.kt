@@ -3,31 +3,24 @@ package com.sliderzxc.fintrack.application
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.activity.viewModels
-import androidx.compose.runtime.getValue
-import androidx.navigation.compose.rememberNavController
-import com.google.accompanist.systemuicontroller.rememberSystemUiController
-import com.sliderzxc.fintrack.navigation.old.root.RootNavigationGraph
-import com.sliderzxc.fintrack.features.splash.viewmodel.SplashViewModel
-import com.sliderzxc.fintrack.themes.FinTrackTheme
+import com.arkivanov.decompose.defaultComponentContext
+import com.arkivanov.mvikotlin.main.store.DefaultStoreFactory
+import com.sliderzxc.fintrack.navigation.root.RootComponent
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
-    private val viewModel: SplashViewModel by viewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val rootComponent = RootComponent(
+            componentContext = defaultComponentContext(),
+            storeFactory = DefaultStoreFactory(),
+        )
         setContent {
-            FinTrackTheme {
-                val navController = rememberNavController()
-                val systemUiController = rememberSystemUiController()
-                val startDestination by viewModel.startDestination
-
-                RootNavigationGraph(
-                    navHostController = navController,
-                    startDestination = startDestination
-                )
-            }
+            ContentView(component = rootComponent)
+            // val navController = rememberNavController()
+//                val systemUiController = rememberSystemUiController()
+//                val startDestination by viewModel.startDestination
         }
     }
 }

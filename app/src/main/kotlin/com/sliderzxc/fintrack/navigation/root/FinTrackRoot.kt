@@ -1,7 +1,8 @@
-package com.sliderzxc.fintrack.navigation.decompose.root
+package com.sliderzxc.fintrack.navigation.root
 
 import com.arkivanov.decompose.router.stack.ChildStack
 import com.arkivanov.decompose.value.Value
+import com.sliderzxc.fintrack.features.splash.navigation.SplashComponent
 
 interface FinTrackRoot {
 
@@ -10,8 +11,4 @@ interface FinTrackRoot {
     sealed class Child {
         data class Splash(val component: SplashComponent) : Child()
     }
-}
-
-interface SplashComponent {
-
 }
