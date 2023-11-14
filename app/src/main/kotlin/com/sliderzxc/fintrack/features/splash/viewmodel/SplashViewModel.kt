@@ -1,9 +1,9 @@
-package com.sliderzxc.fintrack.screens.splash
+package com.sliderzxc.fintrack.features.splash.viewmodel
 
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
-import com.sliderzxc.fintrack.navigation.root.Graph
+import com.sliderzxc.fintrack.navigation.old.root.Graph
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow

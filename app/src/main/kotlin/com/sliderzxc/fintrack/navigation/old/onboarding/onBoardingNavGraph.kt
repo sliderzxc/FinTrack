@@ -1,10 +1,10 @@
-package com.sliderzxc.fintrack.navigation.onboarding
+package com.sliderzxc.fintrack.navigation.old.onboarding
 
 import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 import androidx.navigation.navigation
-import com.sliderzxc.fintrack.navigation.root.Graph
+import com.sliderzxc.fintrack.navigation.old.root.Graph
 
 fun NavGraphBuilder.onBoardingNavGraph(navController: NavController) {
     navigation(

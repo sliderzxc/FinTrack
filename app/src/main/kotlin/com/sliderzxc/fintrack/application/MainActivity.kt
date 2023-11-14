@@ -5,11 +5,10 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.viewModels
 import androidx.compose.runtime.getValue
-import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.navigation.compose.rememberNavController
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
-import com.sliderzxc.fintrack.navigation.root.RootNavigationGraph
-import com.sliderzxc.fintrack.screens.splash.SplashViewModel
+import com.sliderzxc.fintrack.navigation.old.root.RootNavigationGraph
+import com.sliderzxc.fintrack.features.splash.viewmodel.SplashViewModel
 import com.sliderzxc.fintrack.themes.FinTrackTheme
 import dagger.hilt.android.AndroidEntryPoint
 

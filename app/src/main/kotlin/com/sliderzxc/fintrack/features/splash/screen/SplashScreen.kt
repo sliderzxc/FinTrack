@@ -1,4 +1,4 @@
-package com.sliderzxc.fintrack.screens.splash
+package com.sliderzxc.fintrack.features.splash.screen
 
 import android.util.Log
 import androidx.compose.foundation.background
@@ -9,7 +9,6 @@ import androidx.compose.ui.graphics.Color
 
 @Composable
 fun SplashScreen(
-    onNavigateUp: () -> Unit
 ) {
     Text(text = "Hello Android", modifier = Modifier.background(Color.Black))
     Log.d("MyLog", "Hello")

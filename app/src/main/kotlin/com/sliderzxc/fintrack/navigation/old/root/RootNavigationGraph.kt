@@ -1,11 +1,10 @@
-package com.sliderzxc.fintrack.navigation.root
+package com.sliderzxc.fintrack.navigation.old.root
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
-import androidx.navigation.compose.composable
-import com.sliderzxc.fintrack.navigation.onboarding.onBoardingNavGraph
-import com.sliderzxc.fintrack.navigation.splash.splashNavGraph
+import com.sliderzxc.fintrack.navigation.old.onboarding.onBoardingNavGraph
+import com.sliderzxc.fintrack.navigation.old.splash.splashNavGraph
 
 @Composable
 fun RootNavigationGraph(
