@@ -18,9 +18,6 @@ class MainActivity : ComponentActivity() {
         )
         setContent {
             ContentView(component = rootComponent)
-            // val navController = rememberNavController()
-//                val systemUiController = rememberSystemUiController()
-//                val startDestination by viewModel.startDestination
         }
     }
 }
